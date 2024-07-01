@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VDV-Enterprise</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="icon" href="assets/logo.ico" type="image/png" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- swiper js -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-background-img">
+    <!-- nav -->
+    <nav id="navbar" class="w-full z-30">
+      <div
+        class="bg-text-color md:bg-text-color shadow-md md:shadow-none mx-auto px-4 sm:px-12 py-4 flex justify-between items-center"
+      >
+        <a href="#"> <img src="assets/Logo.png" width="50px" alt="Logo" /></a>
+        <div class="block lg:hidden">
+          <button id="hamburger" class="text-dark-blue focus:outline-none">
+            <svg
+              class="w-6 h-6 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="nav hidden lg:flex gap-8 text-white">
+          <li>
+            <a href="#discover" class="hover:text-blue-custom">About Us</a>
+          </li>
+          <li>
+            <a href="#blog" class="hover:text-blue-custom">Commodity</a>
+          </li>
+          <li>
+            <a href="#aboutUs" class="hover:text-blue-custom">Transport</a>
+          </li>
+          <li>
+            <a href="#contactUs" class="hover:text-blue-custom">Contact Us</a>
+          </li>
+        </ul>
+        <a
+          href="#login"
+          class="hidden lg:block bg-blue-custom text-white px-12 py-2.5 rounded-full hover:bg-blue-700"
+          >Contact Us</a
+        >
+      </div>
+      <div
+        id="menu"
+        class="nav-menu lg:hidden max-h-0 overflow-hidden bg-white shadow-md transition-max-height duration-300 ease-in-out"
+      >
+        <hr />
+        <ul
+          class="flex flex-col items-center py-4 text-text-color-1 bg-text-color text-white"
+        >
+          <li class="pb-4">
+            <a href="#discover" class="hover:text-purple-400">About Us</a>
+          </li>
+          <li class="py-4">
+            <a href="#blog" class="hover:text-purple-400">Commodity</a>
+          </li>
+          <li class="py-4">
+            <a href="#aboutUs" class="hover:text-purple-400">Transport</a>
+          </li>
+          <li class="py-4">
+            <a href="#contactUs" class="hover:text-purple-400">Contact Us</a>
+          </li>
+          <li class="py-4">
+            <a
+              href="#login"
+              class="bg-purple-600 text-white px-12 py-2.5 rounded-full hover:bg-purple-500"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- End Navbar -->
+    <!-- Hero Section with Swiper -->
+    <section id="hero">
+      <div class="relative w-full overflow-hidden" id="carousel">
+        <div class="carousel-item visible relative">
+          <img
+            src="assets/hero1.png"
+            alt="Image 1"
+            class="w-full bg-contain h-[70vh] md:h-[88vh]"
+          />
+          <div class="absolute inset-0">
+            <div class="text-white mx-auto">
+              <div
+                class="text-start text-white mt-12 md:mt-44 ms-4 md:ms-12 z-20 w-2/3 md:w-[750px]"
+              >
+                <h1 class="text-3xl md:text-6xl font-bold mb-12 leading-snug">
+                  <span class="text-blue-custom"> We are revolutionary</span>
+                  and we want to take the market over.
+                </h1>
+
+                <a
+                  href="#contactUs"
+                  class="bg-blue-custom px-6 py-2.5 md:px-8 md:py-4 rounded-xl text-white hover:bg-blue-500"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item hidden relative">
+          <img
+            src="assets/hero2.png"
+            alt="Image 2"
+            class="w-full bg-contain h-[70vh] md:h-[88vh]"
+          />
+          <div class="absolute inset-0">
+            <div class="text-white">
+              <div
+                class="text-start text-white mt-12 md:mt-44 ms-4 md:ms-12 z-20 w-2/3 md:w-[750px]"
+              >
+                <h1 class="text-3xl md:text-6xl font-bold mb-12 leading-snug">
+                  <span class="text-blue-custom"> We are revolutionary</span>
+                  and we want to take the market over.
+                </h1>
+
+                <a
+                  href="#contactUs"
+                  class="bg-blue-custom px-6 py-2.5 md:px-8 md:py-4 rounded-xl text-white hover:bg-blue-500"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item hidden relative">
+          <img
+            src="assets/hero3.png"
+            alt="Image 3"
+            class="w-full bg-contain h-[70vh] md:h-[88vh]"
+          />
+          <div class="absolute inset-0">
+            <div class="container text-white">
+              <div
+                class="text-start text-white mt-12 md:mt-44 ms-4 md:ms-12 z-20 w-2/3 md:w-[750px]"
+              >
+                <h1
+                  class="text-3xl md:text-6xl font-bold mb-12 leading-snug text-white"
+                >
+                  <span class="text-blue-custom"> We are revolutionary</span>
+                  and we want to take the market over.
+                </h1>
+
+                <a
+                  href="#contactUs"
+                  class="bg-blue-custom px-6 py-2.5 md:px-8 md:py-4 rounded-xl text-white hover:bg-blue-500"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination -->
+        <div
+          class="absolute bottom-10 md:bottom-20 left-1/2 transform -translate-x-1/2 flex space-x-2"
+        >
+          <button
+            class="pagination-dot bg-blue-custom rounded-full w-3 h-3"
+          ></button>
+          <button
+            class="pagination-dot bg-blue-custom rounded-full w-3 h-3 opacity-50"
+          ></button>
+          <button
+            class="pagination-dot bg-blue-custom rounded-full w-3 h-3 opacity-50"
+          ></button>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section with Swiper -->
+
+    <!-- main content -->
+    <!-- Our Client -->
+    <section id="ourClient">
+      <div class="py-14 bg-white">
+        <div class="justify-center">
+          <div>
+            <div class="text-center mb-8 px-6 md:px-0">
+              <h5 class="fw-bold text-4xl font-bold">Our Clients</h5>
+              <p class="text-text-color text-base font-light">
+                We have been working with some Fortune 500+ clients
+              </p>
+            </div>
+            <marquee direction="right">
+              <div class="flex gap-12">
+                <img src="assets/client1.svg" alt="" />
+                <img src="assets/client2.svg" alt="" />
+                <img src="assets/client3.svg" alt="" />
+                <img src="assets/client4.svg" alt="" />
+                <img src="assets/client5.svg" alt="" />
+                <img src="assets/client6.svg" alt="" />
+                <img src="assets/client7.svg" alt="" />
+                <img src="assets/client2.svg" alt="" />
+              </div>
+            </marquee>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end Our Client -->
+
+    <!-- about us -->
+    <section id="aboutUs">
+      <div class="bg-blue-custom p-12">
+        <div>
+          <div class="block md:flex gap-12 justify-between items-center">
+            <img
+              src="assets/AboutUs.png"
+              class="md:hidden block mb-4"
+              width="600px"
+              alt=""
+            />
+            <div>
+              <h5 class="text-white underline font-bold mb-4">ABOUT US</h5>
+              <h6
+                class="text-text-color font-bold text-3xl md:text-5xl md:leading-tight"
+              >
+                Empowering Your Business with VDV Enterprise
+                <span class="text-white">Logistics Solutions</span>
+              </h6>
+              <p
+                class="text-start text-white md:text-lg text-sm leading-[32px] tracking-wide mb-12 mt-4"
+              >
+                Welcome to VDV Enterprise! We are a team of young, enthusiastic
+                entrepreneurs driven by a passion for excellence and a
+                commitment to our clients. Our dedication to client satisfaction
+                is unparalleled, with a focus on speed, accuracy, and diligence
+                in all our services.
+                <br />
+                At VDV Enterprise, we believe in more than just business. We are
+                on a mission to eradicate poverty and uplift communities. Our
+                vision is to build monumental structures that not only represent
+                our company’s values but also inspire and empower those around
+                us. We aim to be known globally for our innovative and
+                sustainable solutions
+              </p>
+            </div>
+            <img
+              src="assets/AboutUs.png"
+              class="md:block hidden"
+              width="600px"
+              alt=""
+            />
+          </div>
+          <div class="md:flex block gap-4 justify-between mt-20">
+            <div
+              class="bg-white px-4 py-6 rounded-lg text-text-color text-center justify-center"
+            >
+              <img
+                src="assets/Mision.png"
+                width="100px"
+                class="mx-auto"
+                alt=""
+              />
+
+              <h5 class="fw-bold text-4xl my-4">Mission</h5>
+              <p class="text-base font-light">
+                Providing exceptional service and opportunities to eradicate
+                poverty through sustainable business practices.
+              </p>
+            </div>
+            <div
+              class="bg-white px-4 py-6 rounded-lg text-text-color text-center justify-center"
+            >
+              <img
+                src="assets/Mandate.png"
+                width="100px"
+                class="mx-auto"
+                alt=""
+              />
+
+              <h5 class="fw-bold text-4xl my-4">Mandate</h5>
+              <p class="text-base font-light">
+                To enhance every person that comes in contact with our company,
+                to foster a thriving community by creating opportunities for
+                growth and prosperity.
+              </p>
+            </div>
+            <div
+              class="bg-white px-4 py-6 rounded-lg text-text-color text-center justify-center"
+            >
+              <img
+                src="assets/Vision.png"
+                width="100px"
+                class="mx-auto"
+                alt=""
+              />
+
+              <h5 class="fw-bold text-4xl my-4">Vision</h5>
+              <p class="text-base font-light">
+                To construct iconic buildings that will symbolize our values and
+                make a ever lasting impact worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end about us -->
+
+    <!-- why choose us -->
+    <section class="whyChooseUs">
+      <div class="p-4 md:p-24 bg-[#EDF0F3] text-center">
+        <h5 class="uppercase text-blue-custom font-bold text-sm mt-8 md:mt-0">
+          Why choose us
+        </h5>
+        <h6 class="font-bold text-2xl md:text-4xl text-text-color">
+          People choose us because we <br />
+          serve the best for everyone
+        </h6>
+        <div class="mt-12 md:mt-24 mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 md:gap-x-32 gap-y-12">
+            <div class="flex gap-2 items-center">
+              <img src="assets/Choose1.png" width="100px" alt="" />
+              <div class="text-start">
+                <h5 class="font-semibold text-xl md:text-2xl text-text-color">
+                  Client-Centric Approach
+                </h5>
+                <p class="font-light text-text-color text-sm md:text-base">
+                  We prioritize our clients’ needs and ensure their satisfaction
+                  with every project
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="assets/Choose2.png" width="100px" alt="" />
+              <div class="text-start">
+                <h5 class="font-semibold text-xl md:text-2xl text-text-color">
+                  Speed and Precision
+                </h5>
+                <p class="font-light text-text-color text-sm md:text-base">
+                  Our operations are characterized by swift execution and
+                  meticulous attention to detail.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="assets/Choose3.png" width="100px" alt="" />
+              <div class="text-start">
+                <h5 class="font-semibold text-xl md:text-2xl text-text-color">
+                  Sustainability
+                </h5>
+                <p class="font-light text-text-color text-sm md:text-base">
+                  We are committed to sustainable practices that benefit both
+                  our clients and the environment.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-2 items-center">
+              <img src="assets/Choose4.png" width="100px" alt="" />
+              <div class="text-start">
+                <h5 class="font-semibold text-xl md:text-2xl text-text-color">
+                  Community Focus
+                </h5>
+                <p class="font-light text-text-color text-sm md:text-base">
+                  We believe in giving back to the community and making a
+                  positive social impact.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end why choose us -->
+
+    <!-- testimonial -->
+    <section id="testimonial">
+      <div class="mt-32 mx-auto">
+        <div class="text-center mb-8">
+          <h5 class="font-semibold text-sm text-blue-custom text-center">
+            Testimonial
+          </h5>
+          <h6 class="font-medium text-5xl text-text-color">
+            What Our Client Said about us
+          </h6>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper px-4 md:px-24">
+            <div class="swiper-slide">
+              <div
+                class="p-14 bg-white rounded-2xl shadow border border-gray-100 flex-col justify-start items-start gap-4 inline-flex"
+              >
+                <p class="font-ligt text-lg text-gray-400">
+                  Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat aute irure
+                  sint amet occaecat cupidatat non proident”
+                </p>
+                <div class="flex gap-6 items-center">
+                  <img src="assets/avatar2.png" width="60px" alt="" />
+                  <div>
+                    <h5 class="font-bold text-lg text-text-color">
+                      John Carter
+                    </h5>
+                    <p class="font-light text-base">Ceo at Webflow Agency</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="p-14 bg-white rounded-2xl shadow border border-gray-100 flex-col justify-start items-start gap-4 inline-flex"
+              >
+                <p class="font-ligt text-lg text-gray-400">
+                  Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat aute irure
+                  sint amet occaecat cupidatat non proident”
+                </p>
+                <div class="flex gap-6 items-center">
+                  <img src="assets/avatar2.png" width="60px" alt="" />
+                  <div>
+                    <h5 class="font-bold text-lg text-text-color">
+                      John Carter
+                    </h5>
+                    <p class="font-light text-base">Ceo at Webflow Agency</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="p-14 bg-white rounded-2xl shadow border border-gray-100 flex-col justify-start items-start gap-4 inline-flex"
+              >
+                <p class="font-ligt text-lg text-gray-400">
+                  Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat aute irure
+                  sint amet occaecat cupidatat non proident”
+                </p>
+                <div class="flex gap-6 items-center">
+                  <img src="assets/avatar2.png" width="60px" alt="" />
+                  <div>
+                    <h5 class="font-bold text-lg text-text-color">
+                      John Carter
+                    </h5>
+                    <p class="font-light text-base">Ceo at Webflow Agency</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="p-14 bg-white rounded-2xl shadow border border-gray-100 flex-col justify-start items-start gap-4 inline-flex"
+              >
+                <p class="font-ligt text-lg text-gray-400">
+                  Ut enim ad minim veniam, quis nostrudexercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat aute irure
+                  sint amet occaecat cupidatat non proident”
+                </p>
+                <div class="flex gap-6 items-center">
+                  <img src="assets/avatar2.png" width="60px" alt="" />
+                  <div>
+                    <h5 class="font-bold text-lg text-text-color">
+                      John Carter
+                    </h5>
+                    <p class="font-light text-base">Ceo at Webflow Agency</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="mt-12">
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial -->
+
+    <!-- get started -->
+    <section id="getStarted">
+      <div class="mx-auto my-24">
+        <div
+          class="bg-blue-custom mx-4 p-4 py-12 md:mx-28 md:p-20 rounded-3xl text-center"
+        >
+          <h5 class="text-white font-bold text-xl md:text-5xl md:w-2/3 mx-auto">
+            GET STARTED FOR WORK TOGETHER
+          </h5>
+          <p
+            class="font-light text-white text-base md:text-lg md:w-1/2 mx-auto my-8"
+          >
+            Do you urgently need help? We move out quickly and solve the task.
+            Applies to both companies and individuals.
+          </p>
+          <a
+            href="#"
+            class="bg-white hover:bg-text-color hover:text-white text-blue-custom py-4 px-16 font-medium rounded-full"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- end get started -->
+
+    <!-- contact us -->
+    <section id="contactUs">
+      <div class="contactUs p-1">
+        <div
+          class="bg-white p-8 md:p-12 rounded-xl shadow my-8 md:ms-8 md:w-1/2"
+        >
+          <h5 class="font-bold text-blue-custom text-4xl md:text-5xl mb-4">
+            Contact Us
+          </h5>
+          <form action="#" class="grid gap-y-3">
+            <div class="flex-col flex">
+              <label for="name" class="font-semibold text-base"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="border-2 border-gray-200 md:w-3/4 rounded-lg p-3"
+              />
+            </div>
+            <div class="flex-col flex">
+              <label for="email" class="font-semibold text-base">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="border-2 border-gray-200 md:w-3/4 rounded-lg p-3"
+              />
+            </div>
+            <div class="flex-col flex">
+              <label for="phone" class="font-semibold text-base"
+                >Phone Number</label
+              >
+              <input
+                type="tel"
+                id="phone"
+                class="border-2 border-gray-200 md:w-3/4 rounded-lg p-3"
+              />
+            </div>
+            <div class="flex-col flex">
+              <label for="message" class="font-semibold text-base"
+                >Phone Number</label
+              >
+              <textarea
+                name="message"
+                id="message"
+                class="border-2 border-gray-200 md:w-3/4 rounded-lg p-4"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-blue-custom hover:bg-blue-500 font-medium text-white py-4 px-12 rounded-xl md:w-1/3"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- end contact us -->
+
+    <!-- end main content -->
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="">
+        <div class="bg-text-color py-4 md:py-4 px-4 md:px-24">
+          <img
+            src="assets/logo.png"
+            class="justify-center text-center mx-auto mb-4"
+            width="100"
+            alt=""
+          />
+          <hr />
+          <div class="block md:flex justify-between gap-12 text-white mt-12">
+            <div class="grid gap-y-4">
+              <h5 class="text-lg md:text-2xl font-bold text-blue-custom">
+                Reach Us
+              </h5>
+              <div class="grid address">
+                <div class="grid gap-y-6 pb-6 md:pb-32">
+                  <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="#">+1012 3456 789</a>
+                  </div>
+                  <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="#">VDVENTERPRISE@gmail.com</a>
+                  </div>
+                  <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-map"></i>
+                    <a href="#">South Africa</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="block md:flex gap-20">
+              <div class="grid gap-y-4">
+                <h5 class="text-lg md:text-2xl font-bold text-blue-custom">
+                  Company
+                </h5>
+                <div class="grid gap-y-4">
+                  <ul class="footer grid gap-y-6 pb-6 md:pb-32">
+                    <li class="flex gap-3 items-center">
+                      <a href="#discover">How Its Works</a>
+                    </li>
+                    <li class="flex gap-3 items-center">
+                      <a href="#blog">About Us</a>
+                    </li>
+                    <li class="flex gap-3 items-center">
+                      <a href="#aboutUs">Pricing</a>
+                    </li>
+                    <li class="flex gap-3 items-center">
+                      <a href="#contactUs">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="grid gap-y-4">
+                <h5 class="text-lg md:text-2xl font-bold text-blue-custom">
+                  Legal
+                </h5>
+                <div class="grid">
+                  <ul class="footer grid gap-y-6 pb-6 md:pb-32">
+                    <li class="flex gap-3 items-center">
+                      <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="flex gap-3 items-center">
+                      <a href="#">Terms & Services</a>
+                    </li>
+                    <li class="flex gap-3 items-center">
+                      <a href="#">Terms of Use</a>
+                    </li>
+                    <li class="flex gap-3 items-center">
+                      <a href="#contactUs">Refund Policy</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="social">
+                <h5 class="text-lg md:text-2xl font-bold mb-2 text-blue-custom">
+                  Folow us on
+                </h5>
+                <div class="flex gap-4">
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-facebook fa-xl hover:text-purple-c-100"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-instagram fa-xl hover:text-purple-c-100"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-youtube fa-xl hover:text-purple-c-100"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-linkedin fa-xl hover:text-purple-c-100"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="bg-text-color text-center text-white py-4">
+          <h5 class="font-semibold text-xs md:text-base">
+            VDV ENTEPRISE Company © 2024. All Rights Reserved
+          </h5>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+  </body>
+  <!-- swiper js -->
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      freeMode: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // When window width is >= 640px (mobile)
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        // When window width is >= 768px (tablet)
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        // When window width is >= 1024px (desktop)
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+</html>
